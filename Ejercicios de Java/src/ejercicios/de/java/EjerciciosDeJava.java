@@ -12,7 +12,7 @@ public class EjerciciosDeJava {
 
         do {
             System.out.println("Ingresa el numero del ejercico que deseas revisar,");
-            System.out.println("los ejercios disponibles son del 1 al 30");
+            System.out.println("los ejercicios disponibles son del 1 al 30");
             System.out.println("Si deseas finalizar ingresa el numero 0");
             System.out.println("");
             opcion = tomaDatos.nextInt();
@@ -59,7 +59,78 @@ public class EjerciciosDeJava {
                         Ejercicio10 obj10 = new Ejercicio10();
                         obj10.Ejecutar();
                         break;
-                        
+                    case 11:
+                        Ejercicio11 obj11 = new Ejercicio11();
+                        obj11.Ejecutar();
+                        break;
+                    case 12:
+                        Ejercicio12 obj12 = new Ejercicio12();
+                        obj12.Ejecutar();
+                        break;
+                    case 13:
+                        Ejercicio13 obj13 = new Ejercicio13();
+                        obj13.Ejecutar();
+                        break;
+                    case 14:
+                        Ejercicio14 obj14 = new Ejercicio14();
+                        obj14.Ejecutar();
+                        break;
+                    case 15:
+                        Ejercicio15 obj15 = new Ejercicio15();
+                        obj15.Ejecutar();
+                        break;
+                    case 16:
+                        Ejercicio16 obj16 = new Ejercicio16();
+                        obj16.Ejecutar();
+                        break;
+                    case 17:
+                        Ejercicio17 obj17 = new Ejercicio17();
+                        obj17.Ejecutar();
+                        break;
+                    case 18:
+                        Ejercicio18 obj18 = new Ejercicio18();
+                        obj18.Ejecutar();
+                        break;
+                    case 19:
+                        Ejercicio19 obj19 = new Ejercicio19();
+                        obj19.Ejecutar();
+                        break;
+                    case 20:
+                        Ejercicio20 obj20 = new Ejercicio20();
+                        obj20.Ejecutar();
+                        break;
+                    case 21:
+                        Ejercicio21 obj21 = new Ejercicio21();
+                        obj21.Ejecutar();
+                        break;
+                    case 22:
+                        Ejercicio22 obj22 = new Ejercicio22();
+                        obj22.Ejecutar();
+                        break;
+                    case 23:
+                        Ejercicio23 obj23 = new Ejercicio23();
+                        obj23.Ejecutar();
+                        break;
+                    case 24:
+                        Ejercicio24 obj24 = new Ejercicio24();
+                        obj24.Ejecutar();
+                        break;
+                    case 25:
+                        Ejercicio25 obj25 = new Ejercicio25();
+                        obj25.Ejecutar();
+                        break;
+                    case 26:
+                        Ejercicio26 obj26 = new Ejercicio26();
+                        obj26.Ejecutar();
+                        break;
+                    case 27:
+                        Ejercicio27 obj27 = new Ejercicio27();
+                        obj27.Ejecutar();
+                        break;
+                    case 28:
+                        Ejercicio28 obj28 = new Ejercicio28();
+                        obj28.Ejecutar();
+                        break;
                     default:
                         System.out.println("Ejercicio aun no implementado.");
                         break;
