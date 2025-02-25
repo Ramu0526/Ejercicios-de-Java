@@ -1,17 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejercicios.de.java;
 
-/**
- *
- * @author hp-bo
- */
+import java.util.Scanner;
+
 class Ejercicio25 {
 
-    void Ejecutar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Ejercicio25() {
     }
-    
+
+    void Ejecutar() {
+        System.out.println("\nBienvenido a la agenda de contactos");
+        AgendaContactos();
+    }
+
+    public void AgendaContactos() {
+        Scanner scanner = new Scanner(System.in);
+        String listaContactos = "";
+        String continuar;
+
+        do {
+            System.out.print("\nIngrese el nombre del contacto: ");
+            String nombre = scanner.nextLine();
+
+            System.out.print("Ingrese el número de teléfono: ");
+            String telefono = scanner.nextLine();
+
+            listaContactos += nombre + " - " + telefono + "\n";
+
+            System.out.print("¿Desea agregar otro contacto? (si/no): ");
+            continuar = scanner.nextLine().toLowerCase();
+
+        } while (continuar.equals("si"));
+
+        System.out.println("\nLista de contactos:");
+        System.out.println(listaContactos);
+        System.out.println("Agenda guardada correctamente.");
+    }
 }

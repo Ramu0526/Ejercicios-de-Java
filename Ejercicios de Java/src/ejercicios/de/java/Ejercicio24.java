@@ -1,17 +1,42 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejercicios.de.java;
 
-/**
- *
- * @author hp-bo
- */
+import java.util.Scanner;
+
 class Ejercicio24 {
 
-    void Ejecutar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Ejercicio24() {
     }
-    
+
+    void Ejecutar() {
+        System.out.println("\nBienvenido a la tienda virtual");
+        TiendaVirtual();
+    }
+
+    public void TiendaVirtual() {
+        Scanner scanner = new Scanner(System.in);
+        String listaProductos = "";
+        double totalCompra = 0;
+        String continuar;
+
+        do {
+            System.out.print("\nIngrese el nombre del producto: ");
+            String producto = scanner.nextLine();
+            
+            System.out.print("Ingrese el precio del producto: ");
+            double precio = scanner.nextDouble();
+            scanner.nextLine();
+
+            totalCompra += precio;
+            listaProductos += producto + " - $" + precio + "\n";
+
+            System.out.print("¿Desea agregar otro producto? (si/no): ");
+            continuar = scanner.nextLine().toLowerCase();
+
+        } while (continuar.equals("si"));
+
+        System.out.println("\nResumen de la compra:");
+        System.out.println(listaProductos);
+        System.out.println("Total a pagar: $" + totalCompra);
+        System.out.println("¡Gracias por su compra!");
+    }
 }

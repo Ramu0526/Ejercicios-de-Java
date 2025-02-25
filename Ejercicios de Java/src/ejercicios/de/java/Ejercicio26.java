@@ -1,17 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejercicios.de.java;
 
-/**
- *
- * @author hp-bo
- */
+import java.util.Scanner;
+
 class Ejercicio26 {
 
-    void Ejecutar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Ejercicio26() {
     }
-    
+
+    void Ejecutar() {
+        System.out.println("\nBienvenido al sumador de números");
+        SumarNumeros();
+    }
+
+    public void SumarNumeros() {
+        Scanner scanner = new Scanner(System.in);
+        double sumaTotal = 0;
+        String continuar;
+
+        do {
+            System.out.print("\nIngrese un número: ");
+            while (!scanner.hasNextDouble()) {
+                System.out.print("Entrada no válida. Ingrese un número: ");
+                scanner.next();
+            }
+            double numero = scanner.nextDouble();
+            scanner.nextLine();
+
+            sumaTotal += numero;
+
+            System.out.print("¿Desea ingresar otro número? (si/no): ");
+            continuar = scanner.nextLine().toLowerCase();
+
+        } while (continuar.equals("si"));
+
+        System.out.println("\nLa suma total de los números ingresados es: " + sumaTotal);
+    }
 }
